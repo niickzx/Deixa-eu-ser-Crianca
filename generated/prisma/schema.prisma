@@ -1,0 +1,55 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Usuarios {
+  id              Int         @id @default(autoincrement())
+  posts           Postagens[]
+  nome            String
+  email           String
+  senha           String
+  foto_de_perfil  String
+  tipo_de_usuario String
+}
+
+model Postagens {
+  id            Int         @id @default(autoincrement())
+  id_usuario    Int
+  usuario       Usuarios    @relation(fields: [id_usuario], references: [id])
+  respostas     Respostas[]
+  conteudo      String
+  data_postagem DateTime
+  denuncia      Int
+}
+
+model Respostas {
+  id           Int       @id @default(autoincrement())
+  postagem     Postagens @relation(fields: [id_postagens], references: [id])
+  id_postagens Int
+  conteudo     String
+  data_criacao DateTime
+}
+
+model Chat {
+  id        Int        @id @default(autoincrement())
+  nome      String
+  mensagens Mensagem[]
+}
+
+model Mensagem {
+  id       Int      @id @default(autoincrement())
+  Chat     Chat     @relation(fields: [id_chat], references: [id])
+  id_chat  Int
+  data     DateTime
+  conteudo String
+  emissor  String
+}
