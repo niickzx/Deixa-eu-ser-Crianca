@@ -2,6 +2,8 @@
 
 # | Deixa eu ser Criança! |
 
+oiiii
+
 # Resumo
 
 O projeto analisa os impactos da exposição precoce das crianças ao ambiente digital e às pressões sociais que aceleram seu amadurecimento. Propõe criar uma comunidade online para reunir pais, educadores e cuidadores a fim de discutir estratégias que promovam o equilíbrio entre o uso da internet, o cuidado com o corpo e a saúde mental infantil. Conclui que, embora a internet ofereça aprendizado e interação, também pode causar adultização e sobrecarga emocional. Destaca-se a importância de ambientes seguros e de iniciativas de conscientização que garantam uma infância mais saudável e protegida.
