@@ -3,44 +3,46 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
-   }
-
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  height: 100vh;
-  display: flex;
+  justify-content: center;
   flex-direction: column;
-  align-items: center;
 }
 
 .barra-superior {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px 20px;
-    background: transparent;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background: transparent;
+  justify-content: space-around;
+  border-bottom: solid 1px #fff;
 }
 
-.perfil {
+img {
+  height: 15px;
+  width: 15px;
+}
+
+.invisivel {
+  width: 50px;
+}
+
+.usuario {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right: 20px;
 }
 
-.tabs {
+.tabelas {
   display: flex;
   gap: 10px;
 }
 
-.tab {
+.tabela {
   padding: 8px 20px;
   border: none;
   border-radius: 10px;
@@ -51,11 +53,10 @@ body {
   cursor: pointer;
 }
 
-.tab.active {
+.tabela.selecionada {
   background-color: #fff;
 }
 
-/* Feed */
 .feed {
   width: 80%;
   max-width: 700px;
@@ -65,13 +66,13 @@ body {
   gap: 20px;
 }
 
-.post {
+.postagem {
   display: flex;
   align-items: flex-start;
   background: white;
   border-radius: 15px;
   padding: 15px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   gap: 10px;
 }
 
@@ -94,5 +95,3 @@ body {
   color: #aaa;
   font-size: 18px;
 }
-    
-  
